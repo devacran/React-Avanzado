@@ -4,20 +4,19 @@ const path = require('path')
 module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
-    filename: 'app.bundle.js'
+    filename: 'app.bundle.js',
+    publicPath: '/'
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: [
-          'babel-loader'
-        ]
+        use: ['babel-loader']
       }
-    ],
+    ]
   },
-  plugins:[
+  plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     })
