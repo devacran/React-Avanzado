@@ -2,7 +2,7 @@
 // la pagina favs a modo de ejemplo para saber como funciona
 import React, { useContext, Suspense } from 'react'
 import { GlobalStyles } from './styles/GlobalStyles'
-import { Logo } from './components/Logo'
+import { Header } from './components/Header'
 import { Home } from './pages/Home'
 import { Detail } from './pages/Detail'
 import { NavBar } from './components/NavBar'
@@ -23,7 +23,7 @@ export const App = () => {
     // <Suspense fallback={<div />}>
     <div>
       <GlobalStyles />
-      <Logo />
+      <Header />
       <Router>
         <NotFound default />
         <Home path='/' />

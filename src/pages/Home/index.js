@@ -8,12 +8,9 @@ import { Layout } from '../../components/Layout'
 export const Home = ({ categoryId }) => {
   console.log(categoryId)
   return (
-    <Layout
-      title='Petgram la red social para tu mascota'
-      subtitle='En petgram tu mascota vive en internet'
-    >
+    <>
       <ListOfCategories />
       <ListOfPhotoCards categoryId={categoryId} />
-    </Layout>
+    </>
   )
 }

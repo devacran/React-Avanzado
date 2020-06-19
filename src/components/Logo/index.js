@@ -6,11 +6,11 @@ export function Logo (props) {
   return (
     <Link to='/'>
       <Svg
-        width={385.415}
+        width={190}
         height={122.021}
         viewBox='57.292 13.989 385.415 122.021'
         style={{
-          background: '#f2eddb'
+          background: '#fafafa'
         }}
         preserveAspectRatio='xMidYMid'
         {...props}
